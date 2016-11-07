@@ -37,12 +37,12 @@ class ReposDataStoreSpec: QuickSpec {
                         
                         let repo1 = store.repositories[0]
                         expect(repo1.fullName).to(equal("mojombo/grit"))
-                        expect(repo1.repositoryID).to(equal("1"))
+                        expect(repo1.repositoryID).to(equal(1))
                         expect(repo1.htmlURL).to(equal(URL(string: "https://github.com/mojombo/grit")))
     
                         let repo2 = store.repositories[1]
                         expect(repo2.fullName).to(equal("wycats/merb-core"))
-                        expect(repo2.repositoryID).to(equal("26"))
+                        expect(repo2.repositoryID).to(equal(26))
                         let htmlString = repo2.htmlURL.absoluteString
 //                        print("HTMLString: \(htmlString)")
                         let expected = "https://github.com/wycats/merb-core"
